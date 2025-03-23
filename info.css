@@ -1,0 +1,141 @@
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    color: black;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.container { 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+.wow0 {
+    margin-top: 50px; 
+    height: 100%; padding: 20px; 
+    background-color: white;
+    border: 2px solid #ccc; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-button button {
+    padding: 15px 10px; 
+    background-color: white;
+    border: 2px solid #ccc; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-image {
+    height: 100%; 
+    padding: 20px; margin: auto;
+    background-image: url(img/uhcover.png); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-blend-mode: screen;
+    border: 2px solid #ccc; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-image img {
+    width: 75%;
+}
+
+.info-more, .info-stat, .info-type, .info-evo {
+    height: 100%; 
+    margin: auto; 
+    background-color: white;
+    border: 2px solid #ccc; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-stat, .info-type, .info-evo {
+    padding: 20px;
+}
+
+.evo-container { 
+    display: inline-block; 
+    text-align: center; 
+    margin: 10px; 
+    cursor: pointer;
+    height: 100%; 
+    padding: 20px; 
+    margin: auto; 
+    background-color: white;
+    border: 2px solid #ccc; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.evo-container img { 
+    width: 100%; 
+    max-width: 100px; 
+    display: block; 
+    margin: auto;
+}
+
+.hidden-ability { 
+    font-style: italic; 
+    color: gray;
+}
+
+@media (max-width: 768px) {  
+    .container {
+        max-width: 95%; 
+        padding: 10px;
+    }
+
+    .wow0, .info-image, .info-more, .info-stat, .info-type, .info-evo {
+        padding: 10px; 
+        margin-bottom: 15px; 
+        border-radius: 10px;
+    }
+
+    .info-image img {
+        width: 90%;
+    }
+
+    .info-button button {
+        font-size: 14px; 
+        padding: 8px 12px;
+    }
+
+    .evo-container img {
+        max-width: 80px;
+    }
+
+    .evo-container {
+        padding: 10px; 
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%; 
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .info-button button {
+        font-size: 12px; 
+        padding: 6px 10px;
+    }
+
+    .info-image img {
+        width: 80%;
+    }
+
+    .evo-container img {
+        max-width: 60px;
+    }
+}

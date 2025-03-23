@@ -1,0 +1,43 @@
+body { 
+    font-family: Arial;
+    text-align: center; 
+}
+
+img {
+    image-rendering: pixelated;
+    width: 100%;
+}
+
+.pokemon-box {
+    background-image: url(img/uhcover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pokemon-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.top-bar {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
